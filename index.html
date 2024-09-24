@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de monedas</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="background-image: url(assets/banner.jpg);">
+    <h1>-- Conversor de Monedas --</h1>
+
+    <section id="inicio">
+        <h2>Selecciona la conversion que desees</h2>
+
+        <div class="cards">
+            <div class="card" id="dolarucos">
+                <label for="">Dolares a Pesos</label>
+                <img src="assets/dolar.svg" alt="">
+            </div>
+            <div class="card" id="pesucos">
+                <label>Pesos a Dolares</label>
+                <img src="assets/peso.svg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <div class="contenedor">
+        <section id="dolares" style="background-image: url(assets/dolar.jpg);">
+            <div class="contenido">
+                <h2>- Dolares a Pesos -</h2>
+                <label for="dolar">Ingresa el valor en Dolares, máximo 8 digitos</label>
+                <br>
+                <input type="text" name="dolar" id="dolarUser" maxlength="8" size="10">
+
+                <div class="botones">
+                    <input type="button" value="Regresar" class="btn" id="btn-back">
+                    <input type="button" value="Calcular" class="btn" id="btn-calcularD">
+                </div>
+                
+                <div id="resultado"></div>
+            </div>
+        </section>
+    </div>
+
+    <div class="contenedor">    
+        <section id="pesos" style="background-image: url(assets/peso.jpg);"> 
+            <div class="contenido">
+                <h2>- Pesos a Dolares -</h2>
+                <label for="peso">Ingresa el valor en Pesos, máximo 8 digitos</label>
+                <br>
+                <input type="text" name="peso" id="pesoUser" maxlength="8" size="10">
+        
+                <div class="botones">
+                    <input type="button" value="Regresar" class="btn" id="btn-back1">
+                    <input type="button" value="Calcular" class="btn" id="btn-calcular1">
+                </div>
+                <div id="resultado1"></div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
